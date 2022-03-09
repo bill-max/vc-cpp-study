@@ -6,8 +6,8 @@ int main()
 {
     SALES::Sales one;
     SALES::Sales two;
-    double a[4] = {1.2, 2.1, 2.3, 3};
-    SALES::setSales(one, a, 4);
+    double a[4] = {1.2, 2.1, 2.3};
+    SALES::setSales(one, a, 3);
     SALES::showSales(one);
     SALES::setSales(two);
     SALES::showSales(two);

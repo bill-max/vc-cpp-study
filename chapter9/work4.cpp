@@ -40,7 +40,12 @@ namespace SALES
     }
     void showSales(const Sales &s)
     {
-        std::cout << s.sales << std::endl;
+        int i = 0;
+        while (i < 4 && s.sales[i] != '\0')
+        {
+            std::cout << s.sales[i] << std::endl;
+            ++i;
+        }
         std::cout << "ave:" << s.average
                   << "max:" << s.max
                   << "min:" << s.min << std::endl;
